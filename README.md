@@ -4,7 +4,17 @@ Demonstrates concurrent Fetch jobs with a concurrency pool, retries, and AbortCo
 
 ## Status
 
-Queue helpers (`js/queue.js`) for concurrency pooling and retrying fetches are in place. Demo UI and styles will land in follow-up commits.
+Queue helpers and a working demo page (`index.html` / `js/app.js`) are in place. Styles will land in a follow-up commit.
+
+## Run
+
+```powershell
+python -m http.server 5183
+```
+
+Then open http://localhost:5183
+
+Uses public httpbin.org endpoints for demos.
 
 ## Module
 
@@ -15,16 +25,6 @@ const results = await mapPool(urls, 3, (url, _i, signal) =>
   fetchWithRetry(url, { retries: 2, signal })
 );
 ```
-
-## Planned run
-
-```powershell
-python -m http.server 5183
-```
-
-Then open http://localhost:5183
-
-Uses public httpbin.org endpoints for demos.
 
 ## License
 
