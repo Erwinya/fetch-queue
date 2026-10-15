@@ -4,7 +4,7 @@ Demonstrates concurrent Fetch jobs with a concurrency pool, retries, and AbortCo
 
 ## Status
 
-Queue helpers and a working demo page (`index.html` / `js/app.js`) are in place. Styles will land in a follow-up commit.
+Queue helpers, demo page (`index.html` / `js/app.js`), and demo styles (`css/styles.css`) are in place.
 
 ## Run
 
