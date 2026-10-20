@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Concurrent Fetch demo with concurrency pool, retries, and AbortController cancellation." />
   <title>Fetch Queue</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,16 +16,16 @@
     <h1>Concurrent requests with retry + abort</h1>
   </header>
   <main class="wrap">
-    <section class="panel controls">
-      <label>Concurrency<input id="concurrency" type="number" min="1" max="8" value="2" /></label>
-      <label>Retries<input id="retries" type="number" min="0" max="5" value="2" /></label>
+    <section class="panel controls" aria-label="Queue controls">
+      <label for="concurrency">Concurrency<input id="concurrency" type="number" min="1" max="8" value="2" /></label>
+      <label for="retries">Retries<input id="retries" type="number" min="0" max="5" value="2" /></label>
       <div class="actions">
         <button id="run" type="button" class="btn">Run queue</button>
         <button id="abort" type="button" class="btn subtle" disabled>Abort all</button>
       </div>
     </section>
-    <section class="panel">
-      <pre id="log" class="log">Idle.</pre>
+    <section class="panel" aria-label="Queue log">
+      <pre id="log" class="log" role="status" aria-live="polite">Idle.</pre>
     </section>
   </main>
   <script type="module" src="js/app.js"></script>

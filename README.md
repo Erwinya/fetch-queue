@@ -4,7 +4,7 @@ Demonstrates concurrent Fetch jobs with a concurrency pool, retries, and AbortCo
 
 ## Status
 
-Demo app, styles, and CI checks are in place.
+Complete: queue helpers, accessible demo page, styles, and CI.
 
 ## Run
 
