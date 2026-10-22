@@ -16,6 +16,8 @@ Then open http://localhost:5183
 
 Uses public httpbin.org endpoints for demos.
 
+Abort all uses `AbortController` to cancel in-flight requests and stop the pool.
+
 ## Module
 
 ```js
